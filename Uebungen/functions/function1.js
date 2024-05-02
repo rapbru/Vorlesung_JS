@@ -8,13 +8,13 @@ function sayHi(where){
     }
 }
 
-sayHi((x)=>console.log(x));
-sayHi(console.log);
-sayHi(console.log());
+sayHi((x)=>console.log(x)); // hi
+sayHi(console.log); // hi
+sayHi(console.log()); // Error
 
 console.fun = function(){
     this.log("haha");
 };
 
-console.fun();
-sayHi(console.fun);
+console.fun(); // haha
+sayHi(console.fun); // error

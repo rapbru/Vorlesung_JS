@@ -8,18 +8,18 @@ const object = {
 const object2 = {counter: 100};
 const foo = object.foo;
 
-object.foo();
-foo();
-foo.call({counter: 10});
+object.foo(); // 3
+foo(); // 999
+foo.call({counter: 10}); // 10
 
 object2.foo = foo;
-object2.foo();
+object2.foo(); // 100
 
-const newFoo = foo.bind({counter: 11});
-newFoo();
-newFoo.call({counter: 12});
+const newFoo = foo.bind({counter: 11}); // 10
+newFoo(); // 11
+newFoo.call({counter: 12}); //undefined
 
 //advanced
-new foo();
-new newFoo();
+new foo(); // undefined
+new newFoo(); // undefined
 

@@ -17,4 +17,4 @@ function getIndexOfElements(toMap) {
 }
 
 console.log(getIndexOfElements(["A", "B", "E"])); //A: works
-//console.log(getIndexOfElements(["A", "A", "B"])); //B: does not work
+// console.log(getIndexOfElements(["A", "A", "B"])); //B: does not work // weil das i eine globale variable ist und durch die die zweite methode überschrieben wird. i --> let i
