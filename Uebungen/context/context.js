@@ -15,7 +15,7 @@ foo.call({counter: 10}); // 10
 object2.foo = foo;
 object2.foo(); // 100
 
-const newFoo = foo.bind({counter: 11}); // 10
+const newFoo = foo.bind({counter: 11});
 newFoo(); // 11
 newFoo.call({counter: 12}); //undefined
 
