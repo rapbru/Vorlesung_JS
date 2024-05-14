@@ -17,7 +17,7 @@ object2.foo(); // 100
 
 const newFoo = foo.bind({counter: 11});
 newFoo(); // 11
-newFoo.call({counter: 12}); //undefined
+newFoo.call({counter: 12}); //undefined; der call aufruf kann das bind nicht überschreiben
 
 //advanced
 new foo(); // undefined
